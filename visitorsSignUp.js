@@ -8,6 +8,7 @@ Keen.ready(function(){
 		{
 			event_collection:"Viewed Sign Up Page",
 			actor_property:"user.userId",
+			filters: [{"property_name":"referrer","operator":"not_contains","property_value":"epcylon"},{"property_name":"referrer","operator":"not_contains","property_value":"stealth"}]
 		
 		},
 	
@@ -29,7 +30,7 @@ Keen.ready(function(){
 		},
 		width:1000,
 		height:800,
-		title:"Visitors Sign"
+		title:"Visitors Sign Up"
 
 	});
 

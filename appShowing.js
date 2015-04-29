@@ -76,7 +76,7 @@ Keen.ready(function(){
 		chartType:"columnchart",
 		width:1000,
 		height:800,
-		title:"App viwed",
+		title:"App viewed",
 		chartOptions:{
 			legend:{position:"none"}
 		}

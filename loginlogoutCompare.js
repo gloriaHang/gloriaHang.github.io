@@ -41,7 +41,7 @@ Keen.ready(function(){
 			legend:{position:'right',textStyle: {color: 'blue', fontSize: 16}},
 			orientation:'horizontal'
 		})
-	.title("LogIn&Logout with Analytics Professional(blue)  Steath Trader(red)")
+	.title("LogIn&Logout with Analytics Professional(blue)  Stealth Trader(red)")
 	.width(1000)
 	.height(800)
 	.prepare();
