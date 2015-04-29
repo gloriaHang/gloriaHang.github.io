@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+	<head>
+	<style type="text/css">
+	ul{
+		float:left;
+		width:40%;
+		height:80%;
+		
+	}
+	
+	li:hover{
+		color:green;
+	}
+	li:active{
+		color:red;
+	}
+	#di1{
+		float:left;
+		width:50%;
+		height:80%;
+	}
+	#di2{
+		float:left;
+		width:50%;
+		height:80%;
+	}
+	form{
+		float:right;
+		width:56%;
+		margin-right:30px;
+		margin-top: 10px;
+	}
+	#my_chart{
+		width:100%;
+		height:80%;
+		
+	}
+	#home{
+		display:inline-block;
+	}
+
+	</style>
+	
+	<script type="text/javascript">
+		!function(a,b){a("Keen","https://d26b395fwzu5fz.cloudfront.net/3.2.4/keen.min.js",b)}(function(a,b,c){var d,e,f;c["_"+a]={},c[a]=function(b){c["_"+a].clients=c["_"+a].clients||{},c["_"+a].clients[b.projectId]=this,this._config=b},c[a].ready=function(b){c["_"+a].ready=c["_"+a].ready||[],c["_"+a].ready.push(b)},d=["addEvent","setGlobalProperties","trackExternalLink","on"];for(var g=0;g<d.length;g++){var h=d[g],i=function(a){return function(){return this["_"+a]=this["_"+a]||[],this["_"+a].push(arguments),this}};c[a].prototype[h]=i(h)}e=document.createElement("script"),e.async=!0,e.src=b,f=document.getElementsByTagName("script")[0],f.parentNode.insertBefore(e,f)},this);
+	</script>
+	
+	
+	</head>
+	<title>Project Display</title>
+	
+	<body>
+	
+		<ul >
+  			<div id = "di1">
+  				<li onclick="loadJS('appShowing.js')">Project.1(appShowing)</li><br>
+  				<li onclick="loadJS('captured.js')">Project.3(captured)</li><br>
+  				<li onclick="loadJS('captureCompare.js')">Project.4(capturedCompare)</li><br>
+  				<li onclick="loadJS('creditCard.js')">Project.5(VisitorsCreditCard)</li><br>
+  				<li onclick="loadJS('ehomePage_redirect.js')">Project.6(ehomepage_redirect)</li><br>
+  				<li onclick="loadJS('external_Account.js')">Project.7(externalAccountViewed)</li><br>
+  				<li onclick="loadJS('externalAccess.js')">Project.8(externalAccess)</li><br>
+  				<li onclick="loadJS('externalaccessCompare.js')">Project.9(externalAccessCompare)</li><br>
+  				<li onclick="loadJS('internalAccess.js')">Project.10(internalAccess)</li><br>
+  				<li onclick="loadJS('loginlogoutCompare.js')">Project.11(login&logoutwithProgramName)</li><br>
+  				<li onclick="loadJS('login.js')">Project.12(loginVersion)</li><br>
+  			</div>
+  			<div id="di2">
+  				<li onclick="loadJS('password.js')">Project.13(VisitorsPassword)</li><br>
+  				<li onclick="loadJS('replayTrading.js')">Project.14(playTradingTutorial)</li><br>
+  				<li onclick="loadJS('showAlert.js')">Project.15(showAlert)</li><br>
+  				<li onclick="loadJS('showAnalyzer.js')">Project.16(ShowAnalyzer)</li><br>
+  				<li onclick="loadJS('stealthRedirect.js')">Project.17(stealthRedirect)</li><br>
+				<li onclick="loadJS('Subscription.js')">Project.18(visitorsSubscription)</li><br>
+				<li onclick="loadJS('tutorial.js')">Project.19(viewedTutorial)</li><br>
+				<li onclick="loadJS('userLogInOut.js')">Project.20(usersLoginLogout)</li><br>
+				<li onclick="loadJS('videoView.js')">Project.21(viewedVideo)</li><br>
+				<li onclick="loadJS('visitorsPlayTrading.js')">Project.22(externalVisitorsPlayTradingTutorials)</li><br>
+				<li onclick="loadJS('visitorsSignUp.js')">Project.23(vistorsSignUp)</li><br><br><br><br>
+			</div>
+			<a id="home" href="/index.html">BackToHomePage</a>
+		</ul>	
+		<script type="application/javascript">
+			function loadJS(file) {
+			
+    // DOM: Create the script element
+    		var jsElm = document.createElement("script");
+    // set the type attribute
+    		jsElm.type = "text/javascript";
+    // make the script element load file
+    		jsElm.src = file;
+   
+    // finally insert the element to the body element in order to load the script
+    //<link type="text/css" rel="stylesheet" href="https://www.google.com/uds/?file=visualization&v=1.1&packages=corechart%2Ctable&async=2">
+    		document.body.appendChild(jsElm);
+    		
+	}
+		</script>
+		<form>
+			<fieldset>
+				<legend>Visualization</legend>
+					<div id="my_chart"></div>
+			</fieldset>
+		</form>
+		<footer style="float:right;width:40%;margin:100px;">
+      		<p>Posted by: Gloria Hang</p>
+      		<p>Contact : <a href="gloria.hang07@gmail.com">
+      			gloria.hang07@gmail.com</a></p>
+    	</footer>
+	
+	</body>
+</html>
