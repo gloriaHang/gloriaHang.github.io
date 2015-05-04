@@ -14,14 +14,12 @@
 	{
 		event_collection:"Viewed Sign Up Page",
 	    actor_property:"referrer",
-	    filters: [{"property_name":"referrer","operator":"not_contains","property_value":"epcylon"},{"property_name":"referrer","operator":"not_contains","property_value":"stealthtrader"}],
-	    inverted:true,
-		optional:true,
-		with_actors:true
+	    filters: [{"property_name":"referrer","operator":"not_contains","property_value":"epcylon"},{"property_name":"referrer","operator":"not_contains","property_value":"stealthtrader"}]
+	    
 	},
 	{
 		event_collection:"Viewed Sign In Page",
-		actor_property:"referrer",
+		actor_property:"referrer"
 		
 	}
 	]
